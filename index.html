@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <body>
+        <main class="vista">
+            <section class="vista_contenido">
+                <section class="contenido_principal">
+                    <div class="contenido_principal_logo">
+                        <img src="./img/Vector.png" alt="">
+                    </div>
+                    <div class="contenido_principal_desarrollo">
+                        <div class="desarrollo_texto">
+                           <textarea name="" id="texto_usuario" placeholder="Ingrese el texto aqui" class="contenedor_input" ></textarea>
+                        </div>
+
+                        <div class="botonera">
+                            <div class="texto_alerta">
+                                <div class="vector_alerta">
+                                    <img src="./img/Signo de exclamacion.png" alt="">
+                                </div>
+                                <div class="info_alerta">
+                                    Solo letras minúsculas y sin acentos
+                                </div>    
+                            </div>
+                        
+                            <div class="desarrollo_botones">
+                            
+                                <button onclick="encriptarTexto()" class="boton1">Encriptar</button>
+                                <button onclick="desencriptarTexto()" class="boton2">Desencriptar</button>
+                            
+                            </div> 
+                        </div>                  
+                    </div>
+                </section>
+                <section class="contenido_secundario">
+                    <div id="resultado" class="contenido_secundario_resultado">
+                        <p class="parrafo_respuesta" id="texto_Respuesta"></p>
+                        <button onclick="" id="boton_copiar" class="boton3">Copiar</button>
+                    </div>
+                    <div id="contenido_inicial" class="contenido_secundario_arriba">
+                        <img src="./img/Muñeco.png" alt="">
+                    </div>
+                    <div id="contenido_inicial2" class="contenido_secundario_abajo">
+                        
+                            <h1 class="contenido_secundario_abajo_titulo">Ningún mensaje fue encontrado</h1>
+                            <p class="contenido_secundario_abajo_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script src="app.js" defer></script>
+    </body>
+    <footer class="footer">
+        <p class="footer1">Diseñado y construido por AluraLATAM | Gerardo Saade 2024</p>
+    </footer> 
+    
+</body>
+</html>
